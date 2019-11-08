@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="651dp"
+        android:contentDescription="@string/home"
+        android:src="@drawable/img_10_english_league_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txt_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/empty"
+        app:layout_constraintStart_toEndOf="@+id/img_home"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/sepa_score"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="90dp"
+        android:text="@string/separate"
+        app:layout_constraintEnd_toStartOf="@+id/txt_away"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toEndOf="@+id/txt_home"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_away"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/empty"
+        app:layout_constraintEnd_toStartOf="@+id/img_away"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_away"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="651dp"
+        android:contentDescription="@string/home"
+        android:src="@drawable/img_10_english_league_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
